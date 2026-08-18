@@ -197,6 +197,16 @@ def format_context(results):
 def process_message(query: str):
     print(f"=== RAG Workflow Started ===")
     print(f"[STEP 1] Processing query: {query}")
+    
+    if "bayar" in query.lower():
+        return "pembayaran dilakukan dengan cash atau transfer, lebih lengkapnya bisa ditanyakan langsung pada petugas toko ya"
+    
+    if "pesan" in query.lower() or "order" in query.lower():
+        return "pembelian bisa dilakukan melalui website atau langsung ditoko ya! informasi lengkapnya bisa ditanyakan langsung pada petugas toko terimakasih"
+    
+    if "garansi" in query.lower() or "kerusakan" in query.lower():
+        return "garansi hanya seminggu setelah pembelian, segala kerusakan yang dilakukan oleh pembeli tidak termasuk garansi, terima kasih!"
+    
     results = search_products(query)
     
     if not results:
