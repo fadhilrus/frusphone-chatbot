@@ -210,10 +210,13 @@ def process_message(query: str):
     if "frusphone" in query.lower() or "toko" in query.lower():
         return "Frusphone menjual iphone bekas dengan kualitas baik. Saya sebagai chatbot assistant senang bisa membantu. Terima kasih!"
     
+    if "chatbot" in query.lower() or "chat" in query.lower() or "bot" in query.lower():
+        return "Saya sebagai Frusphone chatbot assistant senang bisa membantu. Terima kasih!"
+    
     results = search_products(query)
     
     if not results:
-        return ("Maaf, saya tidak menemukan produk yang relevan di katalog kami "
+        return ("Maaf, saya tidak menemukan informasi yang relevan di toko kami "
                 "Silakan tanyakan tentang model iPhone lain atau hubungi kami langsung, Terima Kasih!.")
 
     context = format_context(results)
