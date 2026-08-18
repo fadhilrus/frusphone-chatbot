@@ -199,13 +199,16 @@ def process_message(query: str):
     print(f"[STEP 1] Processing query: {query}")
     
     if "bayar" in query.lower():
-        return "pembayaran dilakukan dengan cash atau transfer, lebih lengkapnya bisa ditanyakan langsung pada petugas toko ya"
+        return "pembayaran dilakukan dengan cash atau transfer, lebih lengkapnya bisa ditanyakan langsung pada petugas toko ya!"
     
     if "pesan" in query.lower() or "order" in query.lower():
-        return "pembelian bisa dilakukan melalui website atau langsung ditoko ya! informasi lengkapnya bisa ditanyakan langsung pada petugas toko terimakasih"
+        return "pembelian bisa dilakukan melalui website atau langsung ditoko ya! informasi lengkapnya bisa ditanyakan langsung pada petugas toko. Terimakasih"
     
     if "garansi" in query.lower() or "kerusakan" in query.lower():
-        return "garansi hanya seminggu setelah pembelian, segala kerusakan yang dilakukan oleh pembeli tidak termasuk garansi, terima kasih!"
+        return "garansi hanya seminggu setelah pembelian, segala kerusakan yang dilakukan oleh pembeli tidak termasuk garansi. Terima kasih!"
+    
+    if "frusphone" in query.lower() or "toko" in query.lower():
+        return "Frusphone menjual iphone bekas dengan kualitas baik. Saya sebagai chatbot assistant senang bisa membantu. Terima kasih!"
     
     results = search_products(query)
     
