@@ -1,0 +1,6 @@
+qdrant-client
+google-generativeai
+pandas
+python-dotenv
+openai
+streamlit

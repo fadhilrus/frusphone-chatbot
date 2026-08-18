@@ -1,0 +1,19 @@
+[theme]
+# Tampilan gelap seperti di gambar
+base="dark"
+
+# Warna aksen (tombol, link) yang serasi dengan nuansa biru di gambar
+primaryColor="#0A84FF"
+
+# Latar belakang gelap (sesuai dengan area hitam/gelap di gambar)
+backgroundColor="#121212"
+
+# Latar belakang untuk elemen sekunder (sidebar, box input chat)
+# Coba warna yang sedikit lebih terang atau berbeda tipis dari latar belakang utama
+secondaryBackgroundColor="#1E1E1E"
+
+# Warna teks utama yang kontras (seperti "Let's jump in..." di gambar)
+textColor="#E0E0E0"
+
+# Font tanpa kait (sans serif) agar terlihat bersih dan modern
+font="sans serif"
