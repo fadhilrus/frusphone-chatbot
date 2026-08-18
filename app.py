@@ -116,28 +116,12 @@ st.markdown("""
         text-align: justify;
     }
 
-    /* Force sidebar always visible and disable collapse */
-    [data-testid="collapsedControl"],
-    [data-testid="stSidebarCollapseButton"],
-    [data-testid="stSidebar"] button[title="Collapse sidebar"],
-    [data-testid="stSidebar"] button[title="Expand sidebar"] {
-        display: none !important;
-        visibility: hidden !important;
-        width: 0 !important;
-        height: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        overflow: hidden !important;
-        position: absolute !important;
-        opacity: 0 !important;
-    }
-    section[data-testid="stSidebar"] {
-        transform: none !important;
-        margin-left: 0 !important;
-        position: relative !important;
-        display: block !important;
-        width: 21rem !important;
-        min-width: 21rem !important;
+    /* Desktop: wider sidebar */
+    @media (min-width: 769px) {
+        section[data-testid="stSidebar"] {
+            width: 21rem !important;
+            min-width: 21rem !important;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
